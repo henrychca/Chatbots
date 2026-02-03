@@ -1,0 +1,40 @@
+name: Chatbots
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12.9
+  - pip
+  - pip:
+      # Núcleo LangChain
+      - langchain==0.3.27
+      - langchain-community==0.3.30
+      - langchain-core==0.3.76
+      - langchain-huggingface
+      - langchain-text-splitters
+      - langchain-openai
+
+      # Embeddings y modelos
+      - sentence-transformers
+      - transformers
+      - huggingface-hub
+
+      # Vector store DeepLake
+      - deeplake==3.9.3
+
+      # Lectura y división de PDFs
+      - pypdf>=4.0.0
+
+      # API OpenAI/OpenRouter
+      - openai
+
+      # Utilidades generales
+      - numpy==1.26.4
+      - pandas
+      - tqdm
+      - requests
+      - colorama
+      - tiktoken
+      - matplotlib
+
